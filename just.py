@@ -1,18 +1,20 @@
 import random
 
-hidden_number = random. randint(1,100)
+number_of_games= int(input("How many games would you like to play?: "))
 
-user_guess = 0 
+for i in range(0, number_of_games):
+	hidden_number = random. randint(1,100)
 
-while not user_guess == hidden_number:
+	user_guess = 0 
 
-	user_guess = int(input("Guess a number: "))
-	
-	if user_guess > hidden_number:
-		print("Too high!")
+	while not user_guess == hidden_number:
+		user_guess = int(input("Guess a number: "))
 
-	elif user_guess < hidden_number:
-		print("Too low!")
+		if user_guess > hidden_number:
+			print("Too high!")
 
-	else:
-		print("That's right")
+		elif user_guess < hidden_number:
+			print("Too low!")
+
+		else:
+			print("That's right!")

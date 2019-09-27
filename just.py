@@ -1,18 +1,18 @@
-# sum = 0
+import random
 
-# for i in range(1, 4):
-# 	next_number = int(input("Enter number # " + str(i) + ": "))
-# 	sum += next_number
+hidden_number = random. randint(1,100)
 
-# print(sum/3)
+user_guess = 0 
 
-# some_string = 'hello world'
+while not user_guess == hidden_number:
 
-# for i in some_string:
-# 	print(i)
+	user_guess = int(input("Guess a number: "))
+	
+	if user_guess > hidden_number:
+		print("Too high!")
 
-i = 0 
+	elif user_guess < hidden_number:
+		print("Too low!")
 
-while i <11:
-	print(i)
-	i += 2
+	else:
+		print("That's right")

@@ -1,9 +1,18 @@
-for i in range(0,10):
+# sum = 0
+
+# for i in range(1, 4):
+# 	next_number = int(input("Enter number # " + str(i) + ": "))
+# 	sum += next_number
+
+# print(sum/3)
+
+# some_string = 'hello world'
+
+# for i in some_string:
+# 	print(i)
+
+i = 0 
+
+while i <11:
 	print(i)
-
-for difference in range(10, 0, -1):
-	print(difference)
-
-
-for products in "python":
-	print(products)
+	i += 2

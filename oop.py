@@ -6,7 +6,7 @@ class Person:
 
 
 my_person = Person("Lilit", "Amirkhanyan", "greenish brown")
-my_person2 = Person("Khachatur", "Khachatryan", "hazel")
+my_person2 = Person("Arthur", "Navasardyan", "dark brown")
 
 print(my_person.first_name)
 print(my_person.last_name)
